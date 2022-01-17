@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: DioSamExample
+Transform:
+- AWS::Serverless-2016-10-31
+Resources:
+  helloFromLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: helloFromLambdaFunction
+      Handler: DioSamExample::DioSamExample.Function::FunctionHandler
+      Runtime: dotnetcore3.1
+      MemorySize: 256
+      Timeout: 100
+      Description: A Lambda function that returns a static string.
+      Policies:
+      - AWSLambdaBasicExecutionRole
+    Metadata:
+      SamResourceId: helloFromLambdaFunction
