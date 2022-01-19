@@ -9,6 +9,7 @@
     ".NETCoreApp,Version=v3.1/linux-x64": {
       "DioSamExample/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.7.14",
           "Amazon.Lambda.Core": "2.0.0",
           "Amazon.Lambda.Serialization.SystemTextJson": "2.1.0"
         },
@@ -34,6 +35,25 @@
             "fileVersion": "0.0.0.0"
           }
         }
+      },
+      "AWSSDK.Core/3.7.6": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.6.0"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.7.14": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.6"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.7.14"
+          }
+        }
       }
     }
   },
@@ -56,6 +76,20 @@
       "sha512": "sha512-q2R4I77NrrAHDpcaWby9VA/XhE1tjG/2kpredwucRq7k4dTPCqqB7OFmbiFdlfuErrp2/9+X1l62c4unwVicpw==",
       "path": "amazon.lambda.serialization.systemtextjson/2.1.0",
       "hashPath": "amazon.lambda.serialization.systemtextjson.2.1.0.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uQUS+Vi3qIb8Ea/SXkuq8g2aQXO3VGGASOpXkoI8MkopdhhKhF13gysYftciG4Ye7xw4Lsz5Aimilzlho0fSAA==",
+      "path": "awssdk.core/3.7.6",
+      "hashPath": "awssdk.core.3.7.6.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.7.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HMxLkPDjcnVaqIs6dhLhtRN1dyQYWvndVDgov28/lVjMX1bUMsoGRPRMxjoIW9tgi4Gt3OyUVDARJ5huMDsJjg==",
+      "path": "awssdk.s3/3.7.7.14",
+      "hashPath": "awssdk.s3.3.7.7.14.nupkg.sha512"
     }
   }
 }
